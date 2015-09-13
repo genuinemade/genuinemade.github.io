@@ -1,2 +1,2 @@
-# web-demo
-a web-site demo
+# A web demo
+the design copys from [grovemade](http://grovemade.com/)
