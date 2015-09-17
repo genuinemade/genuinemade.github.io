@@ -1,135 +1,295 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!--Import Google Icon Font-->
-  <!-- <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="stylesheets/materialize.css"/>
-  <link type="text/css" rel="stylesheet" href="stylesheets/application.css"/>
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta charset="utf-8">
-  <title>genuinemade</title>
+  <link type="text/css" rel="stylesheet" href="stylesheets/materialize.css" media="screen,projection"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <title>Genuinemade</title>
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/jquery.stapel.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
-      $('.slider').slider({full_width: true, height: 500, indicators: false, interval: 5000});
+      $('.slider').slider({width: 600, height: 500, indicators: false, interval: 5000});
+      $('.parallax').parallax();
     });
   </script>
 </head>
 
 <body>
-  <header>
-    <div class="navbar-fixed">
-      <nav>
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Logo</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down section table-of-contents">
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo"><i class="material-icons">stars</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Welcome to Genuinemade</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">添加一些文字</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/slider/IMG_9084.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center"><a name="team">Team</a></h5>
+            <p class="light">A group of passionates made product in Genuine attitude. We hold the spirit of be genuine, be focused and be open.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">widgets</i></h2>
+            <h5 class="center"><a href="#design">Design</a></h5>
+            <p class="light">Products conveyed by Genuinemade hold the design criteria to be exquisite in style and functional friendly.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center"><a href="#manufacturing">Manufacturing</a></h5>
+            <p class="light">Our manufacturing facility has been engaged in wooden products manufacture over 10 years. Ralph Lauren and Benz customize wooden phone case with.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">trending_up</i></h2>
+            <h5 class="center"><a href="#quality">Quality</a></h5>
+            <p class="light">Since the very beginning, We take quality control shall be treated with empathy. From initial design to final package, we pay attention to small details cause it do make difference.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m5">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/slider/IMG_8979.jpg">
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m1">
+          &nbsp;
+        </div>
+        <div class="col s12 m5">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/slider/IMG_8983.jpg">
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m5">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/slider/IMG_8985.jpg">
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m1">
+          &nbsp;
+        </div>
+        <div class="col s12 m5">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/slider/IMG_8986.jpg">
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+            <div class="row">
+        <div class="col s12 m5">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/slider/IMG_8990.jpg">
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m1">
+          &nbsp;
+        </div>
+        <div class="col s12 m5">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/slider/IMG_8991.jpg">
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+            <div class="row">
+        <div class="col s12 m5">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/slider/IMG_8993.jpg">
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m1">
+          &nbsp;
+        </div>
+        <div class="col s12 m5">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/slider/IMG_9012.jpg">
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m5">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/slider/IMG_9013.jpg">
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m1">
+          &nbsp;
+        </div>
+        <div class="col s12 m5">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/slider/IMG_9014.jpg">
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text"><a name="about" class="white-text">About us</a></h5>
+          <p class="grey-text text-lighten-4">Genuinemade was born out of a shared belief that everything we do, we believe in doing it at genuine attitude, we believe in doing it attentively. With deep appreciation for products with natural texture and beauty, we are inspired to combine natural wooden materials with stylish while practical design in consumer electronics and accessories.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
           </ul>
         </div>
-      </nav>
-    </div>
-  </header>
-
-  <div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="images/slider/collections-laptop-stand-C3_1.jpg">
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
         </div>
-      </li>
-      <li>
-        <img src="images/slider/Grove_Marquee_MTHW_2.jpg">
-        <div class="caption left-align">
-          <h3>Left Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="images/slider/homefeat-grovemade-iphone-6-dock-A2.jpg">
-        <div class="caption right-align">
-          <h3>Right Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="images/slider/homefeat-grovemade-iphone6-casebumper-A1_1600x500_85.jpg">
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="images/slider/homefeat-grovemade-keyring-B2.jpg">
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="images/slider/homemarq-grovemade-wood-ipad-sleeve-B1_1.jpg">
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="images/slider/homemarq-walnut-desk-collection-E1_2.jpg">
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="images/slider/homemarq-wood-iphone-6-case-C1_2.jpg">
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="images/slider/homemarq-wood-watch-B5.jpg">
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-    </ul>
-  </div>
-
-  <div class="row">
-    <div class="col s12 m9 l10">
-      <div id="team" class="section scrollspy">
-        <p><span>Edmund is a writer whose favorite hobby is making words into things and things into words for Grovemade. He’s also a member of the production team and a personal levitation consultant! When not conjuring up wordy ideas or refining his sanding techniques, he can be found floating idly above busy intersections and reciting the many volumes of random but highly worthwhile trivia he’s compiled over the years. Though he’s too shy to say it, he’d be pleased as punch if you took a looksy at his authorial pursuits <a href="http://edmundsandovalfiction.wordpress.com/">here</a>.</span><br></p>
-
-        <p><span>Victor, aka Victor Sweet, aka Victor Strong is not only one of our awesome production team members but he’s also one of our most powerful Grovemaders. Victor’s secret for superhuman &nbsp;strength? A steady diet of hip-hop, rap, R&amp;B and heaping scoops of white hot magma. When through with his morning routine of deadlifting small cars and tiny houses, you’ll find him fishing the banks of the Columbia River, where he reels in trolley-sized carps with his steely bare hands and a visage of extreme aplomb. When not performing unmatchable feats of strength, you’ll find this dynamo enjoying the many tasty tidbits found far and wide in our fair city.</span><br></p>
-
-        <p><span>Mustafa is our accountant who tolerates our overhead paper planes with deep breaths and a smile on his face. He’s a supporter of Portland’s soccer and basketball teams, the Timbers and the Trailblazers, as well as our local efforts to make Portland a sustainable city. He also prioritizes being a loving son, brother, and husband, despite his family’s insistence that they traded a couple household items for him when he was a baby.</span><br></p>
-      </div>
-
-      <div id="contact" class="section scrollspy">
-        <h3 class="section-title">
-          <a href="http://instagram.com/grovemade" target="_blank">
-            @GROVEMADE
-          </a>
-        </h3>
-      </div>
-
-      <div id="about" class="section scrollspy">
-        <h3 class="section-title">MADE THE HARD WAY</h3>
-        <p class="lead g8 gcenter">
-          We are a family of creators – close knit and a little crazy – handcrafting goods at our workshop in Portland, Oregon. We make beautiful products from quality materials because we believe each one is a representation of who we are.
-        </p>
       </div>
     </div>
-  </div>
-
-
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
