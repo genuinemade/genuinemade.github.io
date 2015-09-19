@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <link type="text/css" rel="stylesheet" href="stylesheets/materialize.css" media="screen,projection"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   
+  <link type="text/css" rel="stylesheet" href="stylesheets/materialize.css" media="screen,projection"/>
+  <link href="stylesheets/application.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <title>Genuinemade</title>
+
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/jquery.stapel.js"></script>
@@ -14,6 +17,7 @@
     $(document).ready(function(){
       $('.slider').slider({width: 600, height: 500, indicators: false, interval: 5000});
       $('.parallax').parallax();
+      $('.button-collapse').sideNav();
     });
   </script>
 </head>
@@ -21,17 +25,19 @@
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><i class="material-icons">stars</i></a>
+      <a id="logo-container" href="#" class="brand-logo">Genuinemade</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#team">Team</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Facebook</a></li>
+        <li><a href="#contact">Twitter</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
         <li><a href="#team">Team</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Facebook</a></li>
+        <li><a href="#contact">Twitter</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -40,17 +46,24 @@
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
-        <br><br>
+<!--         <br><br>
         <h1 class="header center teal-text text-lighten-2">Welcome to Genuinemade</h1>
         <div class="row center">
           <h5 class="header col s12 light">添加一些文字</h5>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="parallax"><img src="images/slider/IMG_9084.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
   <div class="container">
+    <div class="section">
+      <div class="row">
+        <p class="flow-text">
+          Genuinemade was born out of a shared belief that everything we do, we believe in doing it at genuine attitude, we believe in doing it attentively. With deep appreciation for products with natural texture and beauty, we are inspired to combine natural wooden materials with stylish while practical design in consumer electronics and accessories.
+        </p>
+      </div>
+    </div>
     <div class="section">
       <div class="row">
         <div class="col s12 m6">
@@ -259,29 +272,11 @@
   <footer class="page-footer teal">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text"><a name="about" class="white-text">About us</a></h5>
-          <p class="grey-text text-lighten-4">Genuinemade was born out of a shared belief that everything we do, we believe in doing it at genuine attitude, we believe in doing it attentively. With deep appreciation for products with natural texture and beauty, we are inspired to combine natural wooden materials with stylish while practical design in consumer electronics and accessories.</p>
-
-
+        <div class="col s12 m6">
+          <i class="material-icons">phone</i>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+        <div class="col s12 m6">
+          <i class="material-icons">mail</i>
         </div>
       </div>
     </div>
