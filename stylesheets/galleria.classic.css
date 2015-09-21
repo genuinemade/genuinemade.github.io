@@ -59,7 +59,7 @@
     right: 10px;
     z-index: 2;
     display: none;
-    background: url(classic-loader.gif) no-repeat 2px 2px;
+    background: url("images/classic-loader.gif") no-repeat 2px 2px;
 }
 .galleria-theme-classic .galleria-info {
     width: 50%;
