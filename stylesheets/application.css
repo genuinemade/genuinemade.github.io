@@ -5,28 +5,33 @@
  *
  * Made By MaterializeCSS.com
  */
-/* line 8, ../sass/application.scss */
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+/* line 10, ../sass/application.scss */
 html {
   font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
 
-/* line 12, ../sass/application.scss */
+/* line 14, ../sass/application.scss */
 nav ul a,
 nav .brand-logo {
   color: #444;
 }
 
-/* line 17, ../sass/application.scss */
+/* line 19, ../sass/application.scss */
 p {
   line-height: 2rem;
 }
 
-/* line 21, ../sass/application.scss */
+/* line 23, ../sass/application.scss */
 .button-collapse {
   color: #26a69a;
 }
 
-/* line 25, ../sass/application.scss */
+/* line 27, ../sass/application.scss */
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -34,40 +39,40 @@ p {
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* line 32, ../sass/application.scss */
+/* line 34, ../sass/application.scss */
 .parallax-container .section {
   width: 100%;
 }
 
 @media only screen and (max-width: 992px) {
-  /* line 37, ../sass/application.scss */
+  /* line 39, ../sass/application.scss */
   .parallax-container .section {
     position: absolute;
     top: 40%;
   }
 
-  /* line 41, ../sass/application.scss */
+  /* line 43, ../sass/application.scss */
   #index-banner .section {
     top: 10%;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 47, ../sass/application.scss */
+  /* line 49, ../sass/application.scss */
   #index-banner .section {
     top: 0;
   }
 }
-/* line 52, ../sass/application.scss */
+/* line 54, ../sass/application.scss */
 .icon-block {
   padding: 0 15px;
 }
 
-/* line 55, ../sass/application.scss */
+/* line 57, ../sass/application.scss */
 .icon-block .material-icons {
   font-size: inherit;
 }
 
-/* line 59, ../sass/application.scss */
+/* line 61, ../sass/application.scss */
 footer.page-footer {
   margin: 0;
 }

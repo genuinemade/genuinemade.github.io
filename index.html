@@ -15,7 +15,7 @@
   <script type="text/javascript" src="js/jquery.stapel.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
-      $('.slider').slider({width: 600, height: 500, indicators: true, interval: 5000});
+      $('.slider').slider({width: 600, height: 750, indicators: true, interval: 5000});
       $('.parallax').parallax();
       $('.button-collapse').sideNav();
     });
@@ -23,26 +23,28 @@
 </head>
 
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Genuinemade</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#team">Team</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="http://www.facebook.com">Facebook</a></li>
-        <li><a href="http://www.twitter.com">Twitter</a></li>
-      </ul>
+  <div class="navbar-fixed">
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Genuinemade</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="http://www.facebook.com" target="blank">Facebook</a></li>
+          <li><a href="http://www.twitter.com" target="blank">Twitter</a></li>
+        </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#team">Team</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="http://www.facebook.com">Facebook</a></li>
-        <li><a href="http://www.twitter.com">Twitter</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="http://www.facebook.com" target="blank">Facebook</a></li>
+          <li><a href="http://www.twitter.com" target="blank">Twitter</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+  
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
@@ -59,7 +61,7 @@
   <div class="container">
     <div class="section">
       <div class="row">
-        <p class="flow-text">
+        <p class="flow-text center-align">
           Genuinemade was born out of a shared belief that everything we do, we believe in doing it at genuine attitude, we believe in doing it attentively. With deep appreciation for products with natural texture and beauty, we are inspired to combine natural wooden materials with stylish while practical design in consumer electronics and accessories.
         </p>
       </div>
