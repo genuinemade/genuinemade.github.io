@@ -6,18 +6,23 @@
   
   <link type="text/css" rel="stylesheet" href="stylesheets/materialize.css" media="screen,projection"/>
   <link href="stylesheets/application.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="stylesheets/fakeLoader.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/galleria.classic.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <title>Genuinemade</title>
 
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script type="text/javascript" src="js/jquery.stapel.js"></script>
+  <script type="text/javascript" src="js/lazy.load.js"></script>
+  <script type="text/javascript" src="js/fakeLoader.min.js"></script>
+  <script type="text/javascript" src="js/galleria-1.4.2.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
-      $('.slider').slider({width: 600, height: 750, indicators: true, interval: 5000});
+      // $('.slider').slider({full_width: true, height: 750, indicators: true, interval: 5000});
       $('.parallax').parallax();
       $('.button-collapse').sideNav();
+      $(".fakeloader").fakeLoader();
     });
   </script>
 </head>
@@ -44,7 +49,7 @@
       </div>
     </nav>
   </div>
-  
+  <div class="fakeloader"></div>
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
@@ -61,9 +66,11 @@
   <div class="container">
     <div class="section">
       <div class="row">
-        <p class="flow-text center-align">
-          Genuinemade was born out of a shared belief that everything we do, we believe in doing it at genuine attitude, we believe in doing it attentively. With deep appreciation for products with natural texture and beauty, we are inspired to combine natural wooden materials with stylish while practical design in consumer electronics and accessories.
-        </p>
+        <div class="lead">
+          <p class="flow-text center-align">
+            Genuinemade was born out of a shared belief that everything we do, we believe in doing it at genuine attitude, we believe in doing it attentively. With deep appreciation for products with natural texture and beauty, we are inspired to combine natural wooden materials with stylish & practical design in consumer electronics and accessories.
+          </p>
+        </div>
       </div>
     </div>
     <div class="section">
@@ -72,7 +79,9 @@
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">group</i></h2>
             <h5 class="center"><a name="team">Team</a></h5>
-            <p class="light">A group of passionates made product in Genuine attitude. We hold the spirit of be genuine, be focused and be open.</p>
+            <p class="light">
+              A group of passionates, creatives and quality-demanders. We hold the spirit of being genuine, being focused and open-minded.
+            </p>
           </div>
         </div>
 
@@ -80,7 +89,9 @@
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">widgets</i></h2>
             <h5 class="center"><a href="#design">Design</a></h5>
-            <p class="light">Products conveyed by Genuinemade hold the design criteria to be exquisite in style and functional friendly.</p>
+            <p class="light">
+              Products conveyed by Genuinemade hold the design criteria to be exquisite in style and functional friendly.
+            </p>
           </div>
         </div>
       </div>
@@ -89,7 +100,9 @@
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
             <h5 class="center"><a href="#manufacturing">Manufacturing</a></h5>
-            <p class="light">Our manufacturing facility has been engaged in wooden products manufacture over 10 years. Ralph Lauren and Benz customize wooden phone case with.</p>
+            <p class="light">
+              Our manufacturing facility has been dedicated to wooden products manufacture over 10 years. Supplying customized wooden phone case for Ralph Laure, Mercedes-Benz, etc.
+            </p>
           </div>
         </div>
 
@@ -97,22 +110,20 @@
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">trending_up</i></h2>
             <h5 class="center"><a href="#quality">Quality</a></h5>
-            <p class="light">Since the very beginning, We take quality control shall be treated with empathy. From initial design to final package, we pay attention to small details cause it do make difference.</p>
+            <p class="light">
+              Since the very beginning, We insist that quality control shall be performed with tremendous devotion. From initial design to ultimate assembly, we pay attention to small details cause it does make difference.
+            </p>
           </div>
         </div>
       </div>
     </div>
     <div class="section">
-      <div class="slider">
-          <ul class="slides">
-            <li>
-              <img src="images/slider/IMG_3_1.jpg">
-            </li>
-            <li>
-              <img src="images/slider/IMG_3_2.jpg"> 
-            </li>
-          </ul>
+      <div class="row">
+        <div class="galleria">
+          <img src="images/slider/IMG_3_1.jpg">
+          <img src="images/slider/IMG_3_2.jpg"> 
         </div>
+      </div>
     </div>
   </div>
 
@@ -121,10 +132,20 @@
       <div class="row">
         <a name="contact"></a>
         <div class="col s12 m6">
-          <i class="material-icons">phone</i>
+          <div class="valign-wrapper">
+            <i class="material-icons">phone</i>
+            <span class="center-align">&nbsp;&nbsp;+86 021 31667927</span>
+          </div>
+          <div>&nbsp;</div>
+          <div class="valign-wrapper">
+            <i class="material-icons">my_location</i>
+            <span class="center-align">&nbsp;&nbsp;No.123 Shenmei Road, Pudong district, Shanghai, China.</span>
+          </div>
         </div>
         <div class="col s12 m6">
-          <i class="material-icons">mail</i>
+          <div class="valign-wrapper">
+            <i class="material-icons">mail</i><span class="center-align">&nbsp;&nbsp;<a href="mailto:hi@genuinemade.com" class="black-text">hi@genuinemade.com</a></span>
+          </div>
         </div>
       </div>
     </div>
@@ -134,5 +155,9 @@
       </div>
     </div>
   </footer>
+  <script type="text/javascript">
+    Galleria.loadTheme('js/galleria.classic.min.js');
+    Galleria.run('.galleria');
+  </script>
 </body>
 </html>

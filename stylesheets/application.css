@@ -73,6 +73,17 @@ p {
 }
 
 /* line 61, ../sass/application.scss */
+.lead {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* line 66, ../sass/application.scss */
+.galleria {
+  height: 320px;
+}
+
+/* line 70, ../sass/application.scss */
 footer.page-footer {
   margin: 0;
 }
