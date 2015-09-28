@@ -1,0 +1,16 @@
+header,footer,section,article,aside,nav{ display:block}
+.header{ border-bottom:0; padding-bottom:1px; background:url(../images/icon/header_bg.png);}
+.about .about_nav ul li{ border-top:0; padding-top:1px;}
+.about .about_nav ul .li_0{ border-left:0; padding-left:1px; background:url(../images/icon/a_li_0.png) no-repeat left top; }
+.about .about_nav ul .li_0 i{ background:url(../images/icon/a_li_i_0.png) no-repeat left top;}
+.about .about_nav ul .li_1,.about .about_nav ul .li_2{ border:0; padding:1px 1px 0 0;background:url(../images/icon/a_li_1.png) no-repeat left top;}
+.about .about_nav ul .li_2{ padding:1px 1px 0;}
+.about .about_nav ul .li_3{ border-right:0; padding-right:1px;background:url(../images/icon/a_li_2.png) no-repeat right top; }
+.about .about_nav ul .li_3 i{background:url(../images/icon/a_li_i_2.png) no-repeat right top;}
+.founder li i{ background:url(../images/icon/dian.png);}
+.about .about_nav ul .li_0.hover,.about .about_nav ul .li_0:hover{ background:url(../images/icon/a_li_0_h.png) no-repeat left top;}
+.about .about_nav ul .li_3.hover,.about .about_nav ul .li_3:hover{ background:url(../images/icon/a_li_2_h.png) no-repeat right top;}
+.banner .num span{ background:url(../images/icon/icon_comm.png) no-repeat -27px -128px;}
+.banner .num .on, .banner .num span:hover{ background:url(../images/icon/icon_comm.png) no-repeat left -128px;}
+.plan .cont li:hover img{  top:0px;}
+.product .cont li i{background:url(../images/icon/index_1_bg.png) left top;}
