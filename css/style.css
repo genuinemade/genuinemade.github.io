@@ -126,6 +126,19 @@ footer .phone{ display:inline-block; background:url(../images/icon/phone.png) no
 .pc .list li .name .cont{ line-height:30px; font-size:20px; padding-top:30px;}
 .pc .list li.even .name,.pc .list li:nth-child(even) .name{ float:right}
 .pc .list li.even .pic,.pc .list li:nth-child(even)  .pic{ float:left}
+
+.detail .list li{ height:408px; overflow:hidden; padding-bottom:95px;}
+.detail .list li .name{ padding-top:90px; width:540px; float:right}
+.detail .list li  .pic{width:540px; height:408px; float:left}
+.detail .list li  .pic img{width:540px; height:408px;}
+.detail .list li h2{ padding:0 74px; height:50px; line-height:50px; position:relative; text-align:center; font-size:24px;}
+.detail .list li .line,.detail .list li .line1{ position:absolute; height:1px; background:#623920; top:25px; width:74px; display:block;}
+.detail .list li .line{ left:0;}
+.detail .list li .line1{ right:0;}
+.detail .list li .name .cont{ line-height:30px; font-size:20px; padding-top:30px;}
+.detail .list li.even .name,.detail .list li:nth-child(even) .name{ float:left}
+.detail .list li.even .pic,.detail .list li:nth-child(even)  .pic{ float:right}
+
 .iphone{ padding-top:100px; padding-bottom:100px;}
 .iphone ul{ padding:0 1px;}
 .iphone li{ float:left; width:400px; line-height:0;}
