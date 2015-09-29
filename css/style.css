@@ -1,5 +1,7 @@
+@font-face {  font-family: "Futura Lt BT";  src: url('../font/FUTURAL.TTF'), url('../font/FUTURALI.TTF'); } 
+
 /*commen begin*/
-body,div,p,h1,h2,h3,h4,h5,h6,span,a,em,i,table,img,th,tbody,td,tr,u,b,ul,li,ol,dl,dd,dt,input,button,textarea,lable,select,option,header,footer,section,article,aside,mark,nav,time,address{ margin:0px; padding:0px; font-weight:normal;}
+body,div,p,h1,h2,h3,h4,h5,h6,span,a,em,i,table,img,th,tbody,td,tr,u,b,ul,li,ol,dl,dd,dt,input,button,textarea,lable,select,option,header,footer,section,article,aside,mark,nav,time,address{ margin:0px; padding:0px; font-weight:normal; font-family:'Futura Lt BT', Arial, Helvetica, sans-serif}
 header,footer,section,article,aside,nav{ display:block}
 h1,h2,h3,h4,h5,h6{ font-weight:normal; display:block}
 em,i,mark,address{ font-style:normal;}
@@ -11,7 +13,7 @@ a:hover{ }
 img{ border:0;}
 input,select,button,textarea{ -webkit-appearance:normal;}
 input,select{vertical-align:middle;}
-body{font-size:12px; font-family:Arial, Helvetica, sans-serif; }
+body{font-size:12px; font-family:'Futura Lt BT', Arial, Helvetica, sans-serif; }
 html,body{  background:#FFF; color:#623920}
 table {border-collapse: collapse}
 /*清楚浮动*/
@@ -28,6 +30,7 @@ table {border-collapse: collapse}
 ::-moz-placeholder {color:#888;}
 :-ms-input-placeholder { color:#888;}
 .w1200{ width:1202px; margin:0 auto}
+.w1000{ width:1002px; margin:0 auto}
 header{ width:100%; background:#fff; height:100px;border-bottom:1px solid #b09c8c;}
 header .loge{ display:block; float:left; width:266px; line-height:100px; font-size:30px; font-weight:bold; color:#222;}
 header nav{ float:left; display:inline-block;}
@@ -45,7 +48,7 @@ header nav  .dropdown-menu a{ display:block; line-height:24px; padding: 0 16px;}
 
 .banner{ position:relative;  border-bottom:1px solid #b09c8c; overflow:hidden; width:100%; }
 .banner .num{height: 20px; position: absolute; z-index: 3; bottom: 20px; width: 100%;text-align: center;}
-.banner .num span{-webkit-border-radius:50%; border-radius:50%; -moz-border-radius:50%; border:1px solid #fff; height:10px; width:10px; margin:0 4px; display:inline-block;}
+.banner .num span{ border:1px solid #fff; height:10px; width:10px; margin:0 4px; display:block; display:inline-block; background:#999;-webkit-border-radius:50%; border-radius:50%; -moz-border-radius:50%;}
 .banner .num .on{ background:#FFF;}
 .banner li{ top:0; width:100%; width:100%; float:left; line-height:0; display:none }
 .banner li:first-child{ display:block; left:0;}
@@ -54,28 +57,31 @@ header nav  .dropdown-menu a{ display:block; line-height:24px; padding: 0 16px;}
 .banner .left,.banner .right{ left:50%; height:80px; width:80px; position:absolute; top:50%; margin-top:-40px;}
 .banner .left{ background-position:left -88px;margin-left:-520px; }
 .banner .right{ background-position:left -168px;margin-left:520px;}
-.main h2{ text-align:center; height:44px; line-height:44px; font-size:22px; text-align:center; background:url(../images/icon/xian.png) no-repeat center center; color:#623920; margin-top:30px; margin-bottom:20px;}
+.main h2{ text-align:center; height:44px; line-height:44px; font-size:22px; text-align:center; background:url(../images/icon/xian.png) no-repeat center center; color:#623920; margin-top:30px; margin-bottom:20px; font-weight:bold}
+.main h2 a{color:#623920;}
 .about{ padding:0 20%; color:#623920; line-height:30px; font-size:20px; text-align:center;}
 .collection li{ float:left; line-height:0; overflow:hidden}
-.collection .li_00{ width:837px; height:529px;}
-.collection .li_00 img{ width:837px; height:529px;}
-.collection .li_01{ width:363px; height:264px;}
-.collection .li_01 img{width:363px; height:264px;}
-.collection .li_02 { width:363px; height:265px;}
-.collection .li_02 img{ width:363px; height:265px;}
-.collection .li_03{ width:419px; height:262px;}
-.collection .li_03 img{ width:419px; height:262px;} 
-.collection .li_04{ width:781px; height:262px;}
-.collection .li_04 img{ width:781px; height:262px;}
-
-.query ul{ margin:0 -21px; padding-top:100px; padding-bottom:10px;}
-.query li{ float:left; border:1px solid #b19d91; width:370px; height:588px; overflow:hidden; margin:0 21px; overflow:hidden;}
-.query li a{ display:block; position:relative}
+.collection .li_00{ width:699px; height:435px;}
+.collection .li_00 img{width:699px; height:435px;}
+.collection .li_01{ width:303px; height:217px;}
+.collection .li_01 img{width:363px; height:217px;}
+.collection .li_02 { width:303px; height:218px;}
+.collection .li_02 img{width:303px; height:218px;}
+.collection .li_03{ width:350px; height:216px;}
+.collection .li_03 img{ width:350px; height:216px;} 
+.collection .li_04{ width:652px; height:216px; position:relative;}
+.collection .li_04 img{width:652px; height:216px;}
+.collection .li_04 .more{ background:rgba(0,0,0,.7); color:#fff; font-size:20px; height:36px; width:100px; text-align:center; line-height:36px; position:absolute; bottom:22px; right:25px;}
+.collection .li_04 .more-ie-bg{ background:url(../images/icon/more_ie_bg.png) repeat left top;}
+.query ul{ margin:0 -21px; padding-top:50px; padding-bottom:10px;}
+.query li{ float:left; border:1px solid #b19d91; width:370px; height:588px; overflow:hidden; margin:0 21px; overflow:hidden; line-height:0;}
+.query li img{width:370px; height:588px;}
+.query li a{ display:block; position:relative;*height:588px;}
 .query li .maxk{ background:rgba(255,255,255,0.8); width:100%;color:#623920; position:absolute; left:0;  padding:10px 0; top:0;}
 .query li .ie_bg_9{ background:url(../images/icon/bg_8.png) repeat left top;}
 .query li .maxk h3{ height:100px; text-align:center;  font-size:28px; line-height:100px;}
 .query li .maxk .name{ display:none; font-size:22px; padding:0 22px 22px; line-height:30px; text-align:center;}
-.query li.even .maxk{top:auto;bottom:0;}
+.query li.even .maxk{top:auto;bottom:0px;}
 .query li:nth-child(even) .maxk{top:auto;bottom:0;}
 .query li.even .maxk h3{ padding-top:0; padding:22px 22px 0;}
 .query li:nth-child(even) .maxk h3{ padding-top:0;}
@@ -92,7 +98,7 @@ footer .f{ background-position:0 -1px;}
 footer .bird{ background-position:-79px 0;}
 footer p{ line-height:22px; height:22px; padding-bottom:15px;}
 footer .email,footer .phone,footer .dress{ height:22px; width:22px; vertical-align:middle; margin-right:10px;}
-footer .info{ display:inline-block; text-align:left}
+footer .info{ display:inline-block; text-align:left; *margin:0 auto; *display:block; *width:252px;}
 footer .email{background-position:-45px -54px;}
 footer .dress{background-position:-86px -50px;}
 footer .phone{ display:inline-block; background:url(../images/icon/phone.png) no-repeat center center}

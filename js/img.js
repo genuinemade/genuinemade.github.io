@@ -7,4 +7,5 @@ $(function(){
 	if(isIE<9){
 		$(".query li:odd").addClass("even");
 	}
+	
 })

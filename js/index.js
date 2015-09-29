@@ -5,7 +5,7 @@ $.fn.bannerSlide=function(){
 		maxL=_liA.length,
 		index=0,next=1,
 		clearTime=null,
-		time=5E3,left,right,
+		time=1E4,left,right,
 		speen=5E2;
 	if(maxL<2){return false;}
 	//创建按钮对象
@@ -13,7 +13,7 @@ $.fn.bannerSlide=function(){
 	 objNum.className="num";
 	 var _span=document.createElement("span");
 	_liA.each(function(i){
-		var j=_span.cloneNode(true);
+		var j=document.createElement("span");
 		(i===0)&&(j.className="on");
 		objNum.appendChild(j);
 	});
@@ -49,12 +49,15 @@ $.fn.bannerSlide=function(){
 	}
 	clearTime=setInterval(move,time);
 	//点按钮却换图片
-	/*_spanObj.click(function(){
-		var _onIndex=$(this).index()
+	
+	_this.find(".num span").click(function(){
+		var _onIndex=$(this).index();
+		
 		if(_liA.is(":animated")||_onIndex===index){return false;}
 		next=_onIndex;
 		move();
-	});*/
+		return false;
+	});
 	left.click(function(){
 		if(_liA.is(":animated")){return false;}
 		index-=1;
@@ -120,19 +123,7 @@ $(function(){
 		var ban=$(".banner"),h=ban.find("img:eq(0)").height();
 		ban.css({"height":h+"px"});
 	});
-   
-   $("li.down").click(function(e){
-	   var _this=$(this);
-	   if(_this.is(".down-up")){
-	     $(this).removeClass("down-up");
-	   }else{
-		   $(this).addClass("down-up");
-	   }
-	   e.stopPropagation();
-    })
-	$("body").click(function(){
-		$("li.down").removeClass("down-up");
-	});
+
  $(".query li").hover(function(){
 	 $(this).find(".name").stop(false,true).slideDown(500);
  },function(){
@@ -141,13 +132,10 @@ $(function(){
  
    
 });
-/*$(".query li").each(function(){
-		   if($(this).index()%2!=0){
-			   $(this).addClass("even");
-		   }
-		});*/
+
 $(".query li:odd").addClass("even");
 if(isIE<9){
 		$(".maxk").addClass("ie_bg_9");
 		$(".query li:odd").addClass("even");
+		$(".collection  .more").addClass("more-ie-bg");
 	}
