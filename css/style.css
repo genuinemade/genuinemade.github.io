@@ -110,10 +110,12 @@ footer .phone{ display:inline-block; background:url(../images/icon/phone.png) no
 .pc .top .name .pc_img{  padding-top:75px; margin:0 -6px}
 .pc .top .name .pc_img li{ width:126px; float:left; padding:0 6px; }
 .pc .top .name .pc_img li img{ width:126px; height:104px;}
+.pc .top .name .pc_img li img:hover{ cursor: pointer;}
 .pc .top .name .pc_img li p{ text-align:center; font-size:14px; height:40px; line-height:40px;}
 .pc .top .name .tpu{  padding-top:75px; margin:0 -27px}
 .pc .top .name .tpu li{ width:126px; float:left; padding:0 27px; }
 .pc .top .name .tpu li img{ width:126px; height:104px;}
+.pc .top .name .tpu li img:hover{ cursor: pointer;}
 .pc .top .name .tpu li p{ text-align:center; font-size:14px; height:40px; line-height:40px;}
 .pc .list li{ height:408px; overflow:hidden; padding-bottom:95px;}
 .pc .list li .name{ padding-top:90px; width:540px; float:left}
