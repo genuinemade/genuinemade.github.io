@@ -42,7 +42,7 @@ header nav .down i{ display:block; width:0; height:0; border:8px solid #333333; 
 header nav .down-up i{ border-color:transparent  transparent #333333 transparent ; top:62px;}
 header nav .down .dropdown-menu{ display:none}
 header nav .down-up .dropdown-menu{ display:block}
-header nav  .dropdown-menu{position: absolute; top: 100%; right: 0; z-index: 1000; display: none; float: left; min-width: 160px; padding:5px 0;font-size: 14px;text-align: left; background-color: #fff; border:1px solid #f2f2f2}
+header nav  .dropdown-menu{position: absolute; top: 100%; right: 0; z-index: 1000; display: none; float: left; min-width: 160px; *width: 160px; padding:5px 0;font-size: 14px;text-align: left; background-color: #fff; border:1px solid #f2f2f2}
 header nav  .dropdown-menu li{ width:100%; display:block}
 header nav  .dropdown-menu a{ display:block; line-height:24px; padding: 0 16px;} 
 
@@ -126,3 +126,9 @@ footer .phone{ display:inline-block; background:url(../images/icon/phone.png) no
 .pc .list li .name .cont{ line-height:30px; font-size:20px; padding-top:30px;}
 .pc .list li.even .name,.pc .list li:nth-child(even) .name{ float:right}
 .pc .list li.even .pic,.pc .list li:nth-child(even)  .pic{ float:left}
+.iphone{ padding-top:100px; padding-bottom:100px;}
+.iphone ul{ padding:0 1px;}
+.iphone li{ float:left; width:400px; line-height:0;}
+.iphone li a{ display:block;}
+.iphone li img{ width:100%; height:474px;}
+.iphone li .name{ text-align:center; line-height:80px; color:#222; font-size:24px;}
