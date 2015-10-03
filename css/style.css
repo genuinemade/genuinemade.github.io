@@ -35,7 +35,7 @@ header{ width:100%; background:#fff; height:100px;border-bottom:1px solid #b09c8
 header .loge{ display:block; float:left; width:266px; line-height:100px; font-size:30px; font-weight:bold; color:#222;}
 header nav{ float:left; display:inline-block;}
 header nav li{position:relative; float:left}
-header nav a{ display:inline-block; padding:10px 16px 0; line-height:90px; font-size:14px; color:#333333 }
+header nav a{ display:inline-block; padding:10px 16px 0; line-height:90px; font-size:14px; color:#333333; font-weight: bold}
 header nav a:hover{ color:#623920}
 header nav .down-up{ background:#f2f2f2}
 header nav .down i{ display:block; width:0; height:0; border:8px solid #333333; border-color:#333333 transparent transparent transparent ; position:absolute; top:70px; left:50%; margin-left:-8px;}
