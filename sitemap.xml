@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.genuinemade.com/</loc>
+  <lastmod>2015-10-03T06:56:24+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.genuinemade.com/index.html</loc>
+  <lastmod>2015-10-03T06:56:24+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.genuinemade.com/iphone.html</loc>
+  <lastmod>2015-10-03T06:56:25+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.genuinemade.com/sumsung.html</loc>
+  <lastmod>2015-10-03T06:57:25+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.genuinemade.com/gadget.html</loc>
+  <lastmod>2015-10-03T06:59:03+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.genuinemade.com/pc.html</loc>
+  <lastmod>2015-10-03T06:56:25+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.genuinemade.com/tpu.html</loc>
+  <lastmod>2015-10-03T07:19:36+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.genuinemade.com/print.html</loc>
+  <lastmod>2015-10-03T06:49:42+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.genuinemade.com/s6/pc.html</loc>
+  <lastmod>2015-10-03T06:49:10+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.genuinemade.com/s6/tpu.html</loc>
+  <lastmod>2015-10-03T06:56:52+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.genuinemade.com/s6/tpu_edge.html</loc>
+  <lastmod>2015-10-03T06:49:11+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.64</priority>
+</url>
+</urlset>
