@@ -57,7 +57,7 @@ def test_links(root, body)
   # end
 end
 
-paths = %w[index gadget iphone pc print tpu]
+paths = %w[index gadget iphone pc print tpu samsung]
 root = "http://www.genuinemade.com"
 puts "start ..."
 test_site(root, paths)
