@@ -29,7 +29,7 @@ $.fn.bannerSlide=function(){
 	 //移动的函数
 	var move=function(){
 		if(next>index){
-			_liA.css({"left":"100%"});
+			_liA.css({"left":"100%", "display":"block"});
 		_liA.eq(index).css({"left":"0"}).animate({"left":"-100%"},speen);
 		_liA.eq(next).animate({"left":0},speen,function(){
 			index=next;
@@ -37,7 +37,7 @@ $.fn.bannerSlide=function(){
 			if(next+1>=maxL){next=0;}else{next++;}
 		});
 		}else{
-			_liA.css({"left":"-100%"});
+			_liA.css({"left":"-100%", "display":"block"});
 		_liA.eq(index).css({"left":"0"}).animate({"left":"100%"},speen);
 		_liA.eq(next).animate({"left":"0"},speen,function(){
 			index=next;
@@ -62,7 +62,7 @@ $.fn.bannerSlide=function(){
 		if(_liA.is(":animated")){return false;}
 		index-=1;
 		if(index<0)index=maxL-1;
-		_liA.css({"left":"-100%"});
+		_liA.css({"left":"-100%", "display":"block"});
 		_liA.eq(index).css({"left":"0"}).animate({"left":"100%"},speen);
 		_liA.eq(next).animate({"left":"0"},speen,function(){
 			index=next;
@@ -72,7 +72,7 @@ $.fn.bannerSlide=function(){
 	});
 	right.click(function(){
 		if(_liA.is(":animated")){return false;}
-		_liA.css({"left":"100%"});
+		_liA.css({"left":"100%", "display":"block"});
 		_liA.eq(index).css({"left":"0"}).animate({"left":"-100%"},speen);
 		_liA.eq(next).animate({"left":0},speen,function(){
 			index=next;
@@ -116,7 +116,8 @@ $(function(){
 	window.onload=function(){
 		var ban=$(".banner"),h=ban.find("img:eq(0)").height();
 		ban.css({"height":h+"px"});
-		ban.find("li").css({position:"absolute","display":"block"});
+		ban.find("li").css({position:"absolute","display":"none"});
+		ban.find("li:eq(0)").css({position:"absolute","display":"block"});
 		ban.bannerSlide();
 	}
     $(window).resize(function(){
