@@ -50,11 +50,11 @@
     
     <div class="collection w1000">
     	<ul class="clearfix">
-        	<li class="li_00"><img class="lazy" data-original="./images/upload/img1.jpg" /></li>
-        	<li class="li_01"><img class="lazy" data-original="./images/upload/img2.jpg" /></li>
-            <li class="li_02"><img class="lazy" data-original="./images/upload/img3.jpg" /></li>
-            <li class="li_03"><img class="lazy" data-original="./images/upload/img4.jpg" /></li>
-            <li class="li_04"><img class="lazy" data-original="./images/upload/img5.jpg" />
+        	<li class="li_00"><img src="./images/upload/img1.jpg" /></li>
+        	<li class="li_01"><img src="./images/upload/img2.jpg" /></li>
+            <li class="li_02"><img src="./images/upload/img3.jpg" /></li>
+            <li class="li_03"><img src="./images/upload/img4.jpg" /></li>
+            <li class="li_04"><img src="./images/upload/img5.jpg" />
             	<a href="pc.html" class="more">More...</a>
             </li>
     	</ul>
@@ -64,7 +64,7 @@
     	<ul class="clearfix">
         	<li>
             	<a name="design">
-            		<img class="lazy" data-original="./images/upload/img_04.jpg" />
+            		<img src="./images/upload/img_04.jpg" />
                     <div class="maxk">
             			<h3>Design</h3>
                         <div class="name">
@@ -73,7 +73,7 @@
             		</div>
                 </a>
             </li>
-            <li><a name="manufacturing"><img class="lazy" data-original="./images/upload/img_01.jpg" />
+            <li><a name="manufacturing"><img src="./images/upload/img_01.jpg" />
              <div class="maxk">
             			
                         <div class="name">
@@ -82,7 +82,7 @@
                         <h3>Manufacturing</h3>
             		</div>
             </a></li>
-            <li><a name="quality"><img class="lazy" data-original="./images/upload/img_05.jpg" />
+            <li><a name="quality"><img src="./images/upload/img_05.jpg" />
             <div class="maxk">
             			<h3>Quality</h3>
                         <div class="name">
@@ -95,10 +95,10 @@
     <h2><a name="team">Team</a></h2>
     <div class="team">
     	<ul class="clearfix">
-        	<li><a href="javascript:;"><img class="lazy" data-original="./images/upload/img_02.jpg" /></a></li>
-            <li><a href="javascript:;"><img class="lazy" data-original="./images/upload/img_02.jpg" /></a></li>
-            <li><a href="javascript:;"><img class="lazy" data-original="./images/upload/img_02.jpg" /></a></li>
-            <li><a href="javascript:;"><img class="lazy" data-original="./images/upload/img_02.jpg" /></a></li>
+        	<li><a href="javascript:;"><img src="./images/upload/img_02.jpg" /></a></li>
+            <li><a href="javascript:;"><img src="./images/upload/img_02.jpg" /></a></li>
+            <li><a href="javascript:;"><img src="./images/upload/img_02.jpg" /></a></li>
+            <li><a href="javascript:;"><img src="./images/upload/img_02.jpg" /></a></li>
         </ul>
         <div class="cont">
         	<p>A group of passionates, creatives and quality-demanders. We hold the spirit of being </p>
@@ -116,10 +116,6 @@
     <p><i class="comm_icon dress"></i>No.123 Shenmei Road, Pudong district, Shanghai, China.</p>
 </footer>
 <script type="text/javascript" src="./js/jquery.js"></script>
-<script type="text/javascript" src="./js/jquery.lazyload.min.js"></script>
-<script type="text/javascript">
-    $("img.lazy").lazyload();
-</script>
 <script type="text/javascript">
     $.fn.bannerSlide=function(){var h,i,k,m,n,o,a=$(this),b=a.find("li"),c=b.length,d=0,e=1,f=null,g=1e4,j=500;return 2>c?!1:(k=document.createElement("div"),k.className="num",document.createElement("span"),b.each(function(a){var b=document.createElement("span");0===a&&(b.className="on"),k.appendChild(b)}),a[0].appendChild(k),m=document.createElement("i"),h=m.cloneNode(!0),i=m.cloneNode(!0),h.className="left comm_icon",a[0].appendChild(h),i.className="right comm_icon",a[0].appendChild(i),n=$(k).find("span"),h=a.find(".left"),i=a.find(".right"),o=function(){e>d?(b.css({left:"100%",display:"block"}),b.eq(d).css({left:"0"}).animate({left:"-100%"},j),b.eq(e).animate({left:0},j,function(){d=e,n.removeClass().eq(d).addClass("on"),e+1>=c?e=0:e++})):(b.css({left:"-100%",display:"block"}),b.eq(d).css({left:"0"}).animate({left:"100%"},j),b.eq(e).animate({left:"0"},j,function(){d=e,n.removeClass().eq(d).addClass("on"),e+1>=c?e=0:e++}))},f=setInterval(o,g),a.find(".num span").click(function(){var a=$(this).index();return b.is(":animated")||a===d?!1:(e=a,o(),!1)}),h.click(function(){return b.is(":animated")?!1:(d-=1,0>d&&(d=c-1),b.css({left:"-100%",display:"block"}),b.eq(d).css({left:"0"}).animate({left:"100%"},j),b.eq(e).animate({left:"0"},j,function(){d=e,n.removeClass().eq(d).addClass("on"),e+1>=c?e=0:e++}),void 0)}),i.click(function(){return b.is(":animated")?!1:(b.css({left:"100%",display:"block"}),b.eq(d).css({left:"0"}).animate({left:"-100%"},j),b.eq(e).animate({left:0},j,function(){d=e,n.removeClass().eq(d).addClass("on"),e+1>=c?e=0:e++}),void 0)}),i.hover(function(){clearInterval(f),f=null},function(){f&&(clearInterval(o),f=null),f=setInterval(o,g)}),h.hover(function(){clearInterval(f),f=null},function(){f&&(clearInterval(o),f=null),f=setInterval(o,g)}),a.hover(function(){clearInterval(f),f=null},function(){f&&(clearInterval(o),f=null),f=setInterval(o,g)}),void 0)},$(function(){window.onload=function(){var a=$(".banner"),b=a.find("img:eq(0)").height();a.css({height:b+"px"}),a.find("li").css({position:"absolute",display:"none"}),a.find("li:eq(0)").css({position:"absolute",display:"block"}),a.bannerSlide()},$(window).resize(function(){var a=$(".banner"),b=a.find("img:eq(0)").height();a.css({height:b+"px"})}),$(".query li").hover(function(){$(this).find(".name").stop(!1,!0).slideDown(500)},function(){$(this).find(".name").stop().slideUp(500)})}),$(".query li:odd").addClass("even"),9>isIE&&($(".maxk").addClass("ie_bg_9"),$(".query li:odd").addClass("even"),$(".collection  .more").addClass("more-ie-bg"));
 $("li.down").click(function(a){var b=$(this);b.is(".down-up")?$(this).removeClass("down-up"):$(this).addClass("down-up"),a.stopPropagation()}),$("body").click(function(){$("li.down").removeClass("down-up")});</script></script>
