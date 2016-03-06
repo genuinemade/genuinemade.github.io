@@ -1,4 +1,4 @@
-[Genuinemade Website](www.genuinemade.cn)
+[Genuinemade Website](http://www.genuinemade.cn)
 
 ## License
 MIT
